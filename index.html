@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script charset="utf-8" src="http://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+    <title>GeoTarget Test</title>
+</head>
+<body>
+<script>
+    $(document).ready(function() {
+        $('#country').text(YMaps.location.country);
+        $('#region').text(YMaps.location.region);
+        $('#city').text(YMaps.location.city);
+        $('#longitude').text(YMaps.location.longitude);
+        $('#latitude').text(YMaps.location.latitude);
+    });
+</script>
+Страна: <span id="country"></span><br>
+Регион: <span id="region"></span><br>
+Город: <span id="city"></span><br>
+Долгота: <span id="longitude"></span><br>
+Широта: <span id="latitude"></span><br>
+<span></span>
+</body>
+</html>
